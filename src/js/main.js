@@ -29,15 +29,15 @@ $(document).ready(function ($) {
     //burger------------------------end
 
 //open popup
-    $('.acc-link').on('click', function (e) {
+    $('.callback').on('click', function (e) {
         e.preventDefault();
-        $('.modal').removeClass('hidden');
+        $('.callback-from').removeClass('hidden');
         $('body').addClass('lock');
     });
 
 //close popup
-    $('.modal').on('click', function (e) {
-        if ($(e.target).is('.btn-close') || $(e.target).is('.modal')) {
+    $('.callback-from').on('click', function (e) {
+        if ($(e.target).is('.btn-close') || $(e.target).is('.callback-from')) {
             e.preventDefault();
             $(this).addClass('hidden');
             $('body').removeClass('lock');

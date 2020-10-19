@@ -13,16 +13,19 @@
 </head>
 <body>
 
-<!--Дякуємо за відправлену заявку! modal-->
-<section class="ty hidden">
-    <div class="ty__content">
+<div class="callback-from hidden">
+    <div class="form-block" role="dialog" tabindex="-1">
         <button type="button" class="btn-close">×</button>
-        <p>Дякуємо за відправлену заявку!</p>
-        <span>Напротязі 10 хвилин з Вами зв’яжеться наш консультант
-та відповість на усі запитання.</span>
-        <div class="timer">09:55</div>
+        <h3>Обратный звонок</h3>
+        <form method="post" action="#">
+            <input type="hidden" name="whatform" value="Форма - Обратный звонок"/>
+            <input type="text" required="" size="30" maxlength="100" name="name" placeholder="Имя *">
+            <input type="text" required="" size="30" maxlength="100" name="phone" placeholder="Телефон *">
+            <textarea cols="50" rows="7" placeholder="Комментарий"></textarea>
+            <button type="submit" class="btn">Отправить<span></span></button>
+        </form>
     </div>
-</section>
+</div>
 <!--//-->
 <!--header-->
 <header class="header" id="header">
@@ -31,8 +34,8 @@
             <div class="header__top--nav">
                 <a href="#header" class="nav-link">Главная</a>
                 <a href="#about" class="nav-link">О нас</a>
-                <a href="#rates" class="nav-link">Продукция</a>
-                <a href="#map" class="nav-link">Контакти</a>
+                <a href="#products" class="nav-link">Продукция</a>
+                <a href="#contacts" class="nav-link">Контакти</a>
             </div>
             <div class="header__burger">
                 <span></span>
@@ -60,7 +63,7 @@
                         </div>
                         <div class="schedule">Пн-Вс: 8:00 - 20:00</div>
                     </div>
-                    <button class="btn">Вам перезвонить ?</button>
+                    <button class="btn callback">Вам перезвонить ?</button>
                 </div>
             </div>
         </div>
@@ -90,7 +93,7 @@
                     </ul>
                 </div>
                 <div class="HomepageHeader_ctaButtons__1qyMy">
-                    <button type="button" class="btn">
+                    <button type="button" class="btn callback">
                         Получить консультацию
                     </button>
                 </div>
@@ -158,7 +161,7 @@
 </section>
 <!--//ABOUT-->
 <!--PRODUCTS-->
-<section class="products" id="rates">
+<section class="products" id="products">
     <div class="container">
         <div class="products__content">
             <h3>Продукция</h3>
@@ -329,7 +332,7 @@
 </section>
 <!--//CONSULT-->
 <!--MAP-->
-<section class="contacts" id="map">
+<section class="contacts" id="contacts">
     <div class="container">
         <h3>Контакты</h3>
         <div class="contacts__items">
@@ -367,8 +370,8 @@
                 <p>Меню:</p>
                 <a href="#header">Главная</a>
                 <a href="#about">О нас</a>
-                <a href="#rates">Продукция</a>
-                <a href="#map">Контакти</a>
+                <a href="#products">Продукция</a>
+                <a href="#contacts">Контакти</a>
             </div>
             <div class="footer__item footer__item--contacts">
                 <p>Контакти:</p>
