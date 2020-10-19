@@ -1,0 +1,114 @@
+@import '../vendor/smart-grid/smart-grid.sass'
+@import 'fonts'
+@import 'variables'
+@import '../sass/responsive-tabs.scss'
+
++reset
+
+//основная страница
+@import '../sections/header'
+@import '../sections/ty'
+@import '../sections/main'
+@import '../sections/about'
+@import '../sections/products'
+@import '../sections/consult'
+@import '../sections/contacts'
+@import '../sections/advantages'
+@import '../sections/footer'
+
+
+//General
+*
+  box-sizing: border-box
+  text-decoration: none
+  font-family: 'Roboto', sans-serif
+
+body
+  width: 100%
+  max-width: 1920px
+  min-width: 320px
+  font-weight: 500
+  font-size: 16px
+  background-color: #F6F7FB
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.container
+  +wrapper
+
+.w100
+  width: 100%
+
+.hidden
+  display: none
+
+.lock
+  overflow: hidden
+
+h3
+  font-weight: 600
+  font-size: 24px
+  color: $text-color
+  text-transform: uppercase
+  text-align: center
+
+.btn
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1)
+  border-radius: 6px
+  width: 100%
+  text-align: center
+  background: #1bd4d4
+  border: none
+  outline: none
+  height: 40px
+  cursor: pointer
+  text-transform: uppercase
+  display: flex
+  max-width: 270px
+  min-height: 46px
+  margin-left: 0
+  padding: 6px 30px
+  align-items: center
+  justify-content: center
+  transition: all 260ms ease
+  color: #fff
+  font-size: 15px
+  font-weight: bold
+
+  &:hover
+    background: #DDF9F9
+    color: #1bd4d4
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1)
+
+.relative
+  position: relative
+
+//btn to top------------------
+#scroll
+  position: fixed
+  right: 40px
+  bottom: 40px
+  cursor: pointer
+  width: 50px
+  height: 50px
+  background-color: $text-color
+  text-indent: -9999px
+  display: none
+  border-radius: 60px
+  z-index: 99999
+  +lg(display, none!important)
+
+#scroll span
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-left: -8px
+  margin-top: -12px
+  height: 0
+  width: 0
+  border: 8px solid transparent
+  border-bottom-color: #ffffff
+//----------------------------

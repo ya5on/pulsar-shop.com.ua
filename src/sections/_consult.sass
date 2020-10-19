@@ -1,0 +1,54 @@
+.consult
+  background-color: $main-color
+
+  &__content
+    +row-flex
+    justify-content: space-around
+    align-items: center
+    padding: 70px 0
+    +md(padding, 40px 0 40px 0)
+
+  &__title
+    +col
+    +size(4)
+    +size-md(12)
+
+    h3
+      text-transform: initial
+      color: #fff
+      font-size: 30px
+      display: inline-block
+      +md(text-align, center)
+      +sm(font-size, 20px)
+      +md(margin-bottom, 35px)
+
+  &__form
+    +col
+    +size(7)
+    +size-md(12)
+
+    form
+      display: flex
+      justify-content: space-between
+      align-items: center
+      +md(flex-wrap, wrap)
+      +md(justify-content, center)
+
+      input
+        background: #FFF
+        border-radius: 5px
+        height: 46px
+        margin-right: 30px
+        font-size: 18px
+        display: block
+        width: 100%
+        padding: 5px 10px
+        text-indent: 10px
+        color: #213b39
+        border: none
+        outline: none
+        +md(width, 100%)
+        +md(max-width, 270px)
+        +md(margin, 0 25px 0px)
+        +xs(margin-bottom, 15px)
+

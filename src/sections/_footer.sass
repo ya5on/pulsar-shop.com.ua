@@ -1,0 +1,41 @@
+.footer
+  padding-top: 37px
+  padding-bottom: 30px
+  background-color: $main-color
+
+  &__items
+    +row-flex
+    justify-content: space-between
+
+  &__item
+    +col
+    +size(3)
+    +size-sm(12)
+
+    p
+      font-weight: 500
+      margin-bottom: 16px
+      color: #fff
+
+    a
+      font-weight: 500
+      color: #fff
+      margin-bottom: 16px
+
+    &--logo
+      +sm(display, flex)
+      +sm(justify-content, center)
+      +sm(align-items, center)
+
+    &--nav
+      display: flex
+      flex-direction: column
+      +sm(display, none)
+
+    &--contacts
+      display: flex
+      flex-direction: column
+      +sm(display, flex)
+      +sm(justify-content, center)
+      +sm(align-items, center)
+

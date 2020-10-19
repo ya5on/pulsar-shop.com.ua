@@ -1,0 +1,45 @@
+.ty
+  display: flex
+  justify-content: center
+  align-items: center
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 1043
+  height: 100%
+  width: 100%
+  background-color: rgba(0, 0, 0, .7)
+
+  &__content
+    width: 100%
+    max-width: 714px
+    border: 2px solid #E1E1DD
+    border-radius: 5px
+    padding: 105px 110px
+    text-align: center
+    position: relative
+    background-color: #fff
+    +md(margin, 10px)
+    +sm(padding, 40px)
+    +xs(padding, 25px)
+
+    p
+      font-weight: 600
+      font-size: 24px
+      color: #000
+      margin-bottom: 25px
+      +sm(font-size, 22px)
+
+    span
+      font-size: 18px
+      line-height: 22px
+      color: #000
+      margin-bottom: 60px
+
+    .timer
+      font-size: 96px
+      text-transform: uppercase
+      color: #6BB156
+      +sm(font-size, 60px)
+
+

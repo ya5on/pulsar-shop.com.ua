@@ -1,0 +1,62 @@
+.about
+  padding-top: 60px
+  padding-bottom: 60px
+  position: relative
+  +md(z-index, -2)
+  +md(background, url(/dist/img/about/about.jpg) no-repeat center)
+  +md(background-size, cover)
+  +sm(padding-top, 40px)
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: -1
+    background: rgba(0,0,0,.8)
+    display: none
+    +md(display, block)
+
+
+  h3
+    position: relative
+    margin-bottom: 45px
+    +md(color, #fff)
+    +sm(margin-bottom, 25px)
+
+  &__content
+    +row-flex
+    flex-wrap: wrap
+    justify-content: space-between
+    position: relative
+    z-index: 2
+
+  &__text
+    +col
+    +size(6)
+    +size-md(12)
+
+    p
+      font-size: 16px
+      font-weight: 400
+      line-height: 1.5
+      margin-bottom: 25px
+      color: #213B39
+      +md(color, #fff)
+      +sm(margin-bottom, 15px)
+      +md(text-align, justify)
+
+      &:last-of-type
+        margin-bottom: 0
+
+  &__image
+    +col
+    +size(6)
+    +size-md(12)
+    display: flex
+    justify-content: center
+    align-items: center
+    +md(display, none)
+

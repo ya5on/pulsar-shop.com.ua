@@ -1,0 +1,116 @@
+.main
+  padding-top: 25px
+  padding-bottom: 40px
+  width: 100%
+  overflow: hidden
+  display: flex
+  background-color: #fff
+  +sm(overflow, initial)
+  +sm(display, block)
+
+  &__items
+    +row-flex
+    justify-content: space-between
+
+  &__text
+    +col
+    +size(5)
+    +size-sm(12)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    +sm(margin-bottom, 30px)
+
+    .title
+      text-align: initial
+      font-size: 30px
+      font-weight: bold
+      margin-bottom: 20px
+      +sm(text-align, center)
+
+    .subtitle
+      font-size: 18px
+      color: #a7a7a7
+      margin-bottom: 35px
+      +sm(width, 100%)
+      +sm(text-align, center)
+
+    .list
+      margin-bottom: 20px
+
+      li
+        margin-bottom: 10px
+        padding-left: 15px
+        position: relative
+
+        span
+          width: 7px
+          height: 7px
+          border-radius: 100%
+          background-color: #1BD4D4
+          display: block
+          position: absolute
+          top: 6px
+          left: 0
+
+  &__pics
+    +col
+    +size(7)
+    +size-sm(12)
+    display: flex
+    flex-direction: column
+    position: relative
+
+
+.box-1
+  display: flex
+  align-items: flex-end
+  justify-content: flex-end
+
+  .sm-pic
+    width: 180px
+
+  .md-pic
+    margin: 0 0 0 30px
+    width: 410px
+
+.box-2
+  display: flex
+  align-items: flex-start
+  justify-content: flex-end
+  margin-top: 30px
+
+  .sm-pic
+    width: 230px
+    margin: 10px 0 0 0
+
+  .md-pic
+    margin: 0 30px 0 0
+    width: 440px
+
+.box-3
+  //position: absolute
+  //top: 0
+  //right: 0
+  //bottom: 0
+  //transform: translateX(100%)
+  display: flex
+  align-items: flex-end
+  justify-content: flex-end
+  +lg(display, none)
+
+  .sm-pic
+    width: 200px
+    height: 200px
+    margin: 50px 0 30px 30px
+
+  .md-pic
+    margin: 0 0 0 30px
+    width: 200px
+
+.sm-pic, .md-pic
+  border: 1px solid #c8c8c8
+
+.md-pic
+  border-radius: 3px
