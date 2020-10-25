@@ -1,7 +1,7 @@
 @import '../vendor/smart-grid/smart-grid.sass'
 @import 'fonts'
 @import 'variables'
-@import '../sass/responsive-tabs.scss'
+@import '../sections/responsive-tabs'
 
 +reset
 
@@ -41,13 +41,12 @@ img
 
 .w100
   width: 100%
-
+.h100
+  height: 100%
 .hidden
   display: none
-
 .lock
   overflow: hidden
-
 h3
   font-weight: 600
   font-size: 24px
@@ -112,3 +111,9 @@ h3
   border: 8px solid transparent
   border-bottom-color: #ffffff
 //----------------------------
+
+@import 'node_modules/sweetalert2/src/sweetalert2.scss'
+
+.swal2-title
+  font-size: 1.5rem
+  +sm(font-size, 1.2em)

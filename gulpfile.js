@@ -70,8 +70,10 @@ function imgs() {
 //libs
 function libs() {
     return gulp.src([
-            'node_modules/jquery/dist/jquery.min.js',
-            'node_modules/responsive-tabs/js/jquery.responsiveTabs.min.js'
+        'node_modules/jquery/dist/jquery.min.js',
+        'node_modules/responsive-tabs/js/jquery.responsiveTabs.min.js',
+        'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
+        'node_modules/sweetalert2/dist/sweetalert2.js'
         ])
         // .pipe(babel({
         //     presets: ['@babel/env']
@@ -112,9 +114,9 @@ function smartgrid() {
             xs: {
                 width: '560px'
             },
-            // xxs: {
-            //     width: '320px'
-            // }
+            xxs: {
+                width: '320px'
+            }
         }
     };
     return smrtgrid(path.src.vendor.smartgrid, settings)({});

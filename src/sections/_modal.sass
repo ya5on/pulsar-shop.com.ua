@@ -1,4 +1,4 @@
-.callback-from
+.modal
   position: fixed
   left: 0
   top: 0
@@ -23,6 +23,8 @@
   max-width: 400px
   outline: none
   border: none
+  +sm(width, 90%)
+  +sm(padding, 35px)
 
   h3
     color: #393939
@@ -32,14 +34,15 @@
     padding: 0 0 24px
     text-transform: initial
     text-align: left
+    +sm(font-size, 20px)
 
-  form
+  .form
     display: flex
     flex-direction: column
     justify-content: center
     width: 100%
 
-    input
+    &-input
       color: rgba(57,57,57,.5)
       border: 1px solid rgba(53,106,139,.15)
       background: #f6f7fb
@@ -66,7 +69,7 @@
       padding: 14px 14px
       width: 100%
       min-width: 100%
-      min-height: 100px
+      min-height: 70px
       height: auto
       outline: 0
       transition: all .2s
@@ -98,3 +101,14 @@
   &:hover
     color: #000
 
+
+.has-error
+  box-shadow: 0 1px 8px red!important
+
+.alert-success
+  color: #1bd4d4
+  margin-bottom: 5px
+
+.alert-danger
+  color: coral
+  margin-bottom: 5px

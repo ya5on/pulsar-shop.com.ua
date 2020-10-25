@@ -31,13 +31,36 @@ $(document).ready(function ($) {
 //open popup
     $('.callback').on('click', function (e) {
         e.preventDefault();
-        $('.callback-from').removeClass('hidden');
+        $('.callback-form').removeClass('hidden');
         $('body').addClass('lock');
     });
-
+    $('.getConsult').on('click', function (e) {
+        e.preventDefault();
+        $('.consult-form').removeClass('hidden');
+        $('body').addClass('lock');
+    });
+    $('.question').on('click', function (e) {
+        e.preventDefault();
+        $('.question-form').removeClass('hidden');
+        $('body').addClass('lock');
+    });
 //close popup
-    $('.callback-from').on('click', function (e) {
-        if ($(e.target).is('.btn-close') || $(e.target).is('.callback-from')) {
+    $('.callback-form').on('click', function (e) {
+        if ($(e.target).is('.btn-close') || $(e.target).is('.callback-form')) {
+            e.preventDefault();
+            $(this).addClass('hidden');
+            $('body').removeClass('lock');
+        }
+    });
+    $('.consult-form').on('click', function (e) {
+        if ($(e.target).is('.btn-close') || $(e.target).is('.consult-form')) {
+            e.preventDefault();
+            $(this).addClass('hidden');
+            $('body').removeClass('lock');
+        }
+    });
+    $('.question-form').on('click', function (e) {
+        if ($(e.target).is('.btn-close') || $(e.target).is('.question-form')) {
             e.preventDefault();
             $(this).addClass('hidden');
             $('body').removeClass('lock');
@@ -53,5 +76,22 @@ $(document).ready(function ($) {
         startCollapsed: 'true'
     });
 
+    $.fn.setCursorPosition = function(pos) {
+        if ($(this).get(0).setSelectionRange) {
+            $(this).get(0).setSelectionRange(pos, pos);
+        } else if ($(this).get(0).createTextRange) {
+            let range = $(this).get(0).createTextRange();
+            range.collapse(true);
+            range.moveEnd('character', pos);
+            range.moveStart('character', pos);
+            range.select();
+        }
+    };
+
+    $('input[type="tel"]').mask('+38 (999) 999-9999');
+    // $('input[type="tel"]').click(function(){
+    //     $(this).setCursorPosition(5);
+    // }).mask('+38 (999) 999-9999');
+    // $('input[type="tel"]').mask('+38 (999) 999-99-99');
 });
 

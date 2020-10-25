@@ -3,9 +3,24 @@
   padding-bottom: 40px
   width: 100%
   display: flex
-  background-color: #fff
-  +sm(overflow, initial)
-  +sm(display, block)
+  align-items: center
+  background-position: 50% 50%
+  min-height: 85vh
+  position: relative
+  +sm(min-height, 65vh)
+
+  &:after
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    z-index: 1
+    height: 100%
+    width: 100%
+    background-color: rgba(0, 0, 0, .15)
+    display: none
+    +sm(display, block)
+
 
   &__items
     +row-flex
@@ -13,25 +28,31 @@
 
   &__text
     +col
-    +size(5)
+    +size(7)
     +size-sm(12)
     display: flex
     flex-direction: column
     justify-content: center
     align-items: flex-start
+    position: relative
+    z-index: 2
     +sm(margin-bottom, 30px)
+    +sm(align-items, center)
 
     .title
       text-align: initial
-      font-size: 30px
+      font-size: 34px
       font-weight: bold
       margin-bottom: 20px
+      color: #000
+      +sm(color, #fff)
       +sm(text-align, center)
 
     .subtitle
-      font-size: 18px
-      color: #a7a7a7
+      font-size: 22px
+      color: #000
       margin-bottom: 35px
+      +sm(color, #fff)
       +sm(width, 100%)
       +sm(text-align, center)
 
@@ -42,6 +63,8 @@
         margin-bottom: 10px
         padding-left: 15px
         position: relative
+        color: #000
+        +sm(color, #fff)
 
         span
           width: 7px
@@ -60,6 +83,7 @@
     display: flex
     flex-direction: column
     position: relative
+    +sm(display, none)
 
 
 .box-1
@@ -68,7 +92,7 @@
   justify-content: flex-end
 
   .sm-pic
-    width: 180px
+    width: 300px
 
   .md-pic
     margin: 0 0 0 30px
@@ -81,35 +105,12 @@
   margin-top: 30px
 
   .sm-pic
-    width: 230px
+    width: 300px
     margin: 10px 0 0 0
 
   .md-pic
     margin: 0 30px 0 0
-    width: 440px
-
-.box-3
-  //position: absolute
-  //top: 0
-  //right: 0
-  //bottom: 0
-  //transform: translateX(100%)
-  display: flex
-  align-items: flex-end
-  justify-content: flex-end
-  +lg(display, none)
-
-  .sm-pic
-    width: 200px
-    height: 200px
-    margin: 50px 0 30px 30px
-
-  .md-pic
-    margin: 0 0 0 30px
-    width: 200px
-
-.sm-pic, .md-pic
-  border: 1px solid #c8c8c8
+    width: 500px
 
 .md-pic
   border-radius: 3px

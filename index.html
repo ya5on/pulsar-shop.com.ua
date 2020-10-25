@@ -8,21 +8,57 @@
     <!--    <link rel="icon" type="image/png" sizes="57x57" href="/dist/img/favs/57x57.png">-->
     <!--    <link rel="apple-touch-icon-precomposed" sizes="72x72" type="image/png" href="/dist/img/favs/72x72.png"/>-->
     <!--    <link rel="apple-touch-icon-precomposed" sizes="114x114" type="image/png" href="/dist/img/favs/114x114.png"/>-->
-    <title>pulsar</title>
+    <title>Grand Pulsar - магазин профессиональной оптики для охоты</title>
+    <meta name="description" content="Оптика для охоты. Купить тепловизор, тепловизионный прицел, прицел ночного видения, очки ночного видения. Гранд Пульсар.Широкий ассортимент, низкие цены, быстрая доставка. Приборы от ATN, Armasight, Flir, Pulsar.">
+    <meta name="keywords" content="оптика для охоты, тепловизоры, тепловизионные прицелы, прицелы, лазерные дальномеры, дальномеры, бинокли, приборы ночного видения, пнв, тепловизоры pulsar, прицелы ночного видения, насадки ночного видения, коллиматор, тепловизионная насадка, тепловизоры atn, тепловизоры armasight">
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
 <body>
-
-<div class="callback-from hidden">
+<!--modal-->
+<div class="modal callback-form hidden">
     <div class="form-block" role="dialog" tabindex="-1">
         <button type="button" class="btn-close">×</button>
         <h3>Обратный звонок</h3>
-        <form method="post" action="#">
+        <form class="form" action="#">
             <input type="hidden" name="whatform" value="Форма - Обратный звонок"/>
-            <input type="text" required="" size="30" maxlength="100" name="name" placeholder="Имя *">
-            <input type="text" required="" size="30" maxlength="100" name="phone" placeholder="Телефон *">
-            <textarea cols="50" rows="7" placeholder="Комментарий"></textarea>
-            <button type="submit" class="btn">Отправить<span></span></button>
+            <input class="form-input" type="text" size="30" maxlength="100" name="name"
+                   placeholder="Имя *">
+            <input class="form-input" type="tel" size="30" maxlength="100" name="phone"
+                   placeholder="Телефон *">
+            <div class="msg"></div>
+            <button type="submit" class="btn submit-btn">Отправить</button>
+        </form>
+    </div>
+</div>
+<div class="modal consult-form hidden">
+    <div class="form-block" role="dialog" tabindex="-1">
+        <button type="button" class="btn-close">×</button>
+        <h3>Получить консультацию</h3>
+        <form class="form" action="#">
+            <input type="hidden" name="whatform" value="Форма - Получить консультацию"/>
+            <input class="form-input" type="text" size="30" maxlength="100" name="name"
+                   placeholder="Имя *">
+            <input class="form-input" type="tel" size="30" maxlength="100" name="phone"
+                   placeholder="Телефон *">
+            <textarea name="message" cols="30" rows="4" placeholder="Сообщение"></textarea>
+            <div class="msg"></div>
+            <button type="submit" class="btn submit-btn">Отправить</button>
+        </form>
+    </div>
+</div>
+<div class="modal question-form hidden">
+    <div class="form-block" role="dialog" tabindex="-1">
+        <button type="button" class="btn-close">×</button>
+        <h3>Задать вопрос</h3>
+        <form class="form" action="#">
+            <input type="hidden" name="whatform" value="Форма - Задать вопрос"/>
+            <input class="form-input" type="text" size="30" maxlength="100" name="name"
+                   placeholder="Имя *">
+            <input class="form-input" type="tel" size="30" maxlength="100" name="phone"
+                   placeholder="Телефон *">
+            <textarea name="message" cols="30" rows="4" placeholder="Сообщение"></textarea>
+            <div class="msg"></div>
+            <button type="submit" class="btn submit-btn">Отправить</button>
         </form>
     </div>
 </div>
@@ -33,9 +69,9 @@
         <div class="container">
             <div class="header__top--nav">
                 <a href="#header" class="nav-link">Главная</a>
-                <a href="#about" class="nav-link">О нас</a>
                 <a href="#products" class="nav-link">Продукция</a>
-                <a href="#contacts" class="nav-link">Контакти</a>
+                <a href="#about" class="nav-link">О нас</a>
+                <a href="#contacts" class="nav-link">Контакты</a>
             </div>
             <div class="header__burger">
                 <span></span>
@@ -70,7 +106,7 @@
     </div>
 </header>
 <!--SLIDER-->
-<section class="main">
+<section class="main" style="background: url(dist/img/main-bg.jpg) no-repeat right center; background-size: cover">
     <div class="container w100">
         <div class="main__items">
             <div class="main__text">
@@ -93,42 +129,163 @@
                     </ul>
                 </div>
                 <div class="HomepageHeader_ctaButtons__1qyMy">
-                    <button type="button" class="btn callback">
+                    <button type="button" class="btn getConsult">
                         Получить консультацию
                     </button>
                 </div>
-            </div>
-            <div class="main__pics">
-                <div class="box-1">
-                    <div class="sm-pic">
-                        <img src="https://smartmockups-web-assets.imgix.net/hp-hero-business-cards-hover.jpg"
-                             alt="mockups" class="lazyloaded">
-                    </div>
-                    <div class="md-pic">
-                        <img src="https://smartmockups-web-assets.imgix.net/hp-hero-laptop-hover.jpg"
-                             alt="mockups" class="lazyloaded"></div>
-                </div>
-                <div class="box-2">
-                    <div class="md-pic">
-                        <img src="https://smartmockups-web-assets.imgix.net/hp-hero-tshirt-hover.jpg"
-                             alt="mockups" class="lazyloaded"></div>
-                    <div class="sm-pic">
-                        <img src="https://smartmockups-web-assets.imgix.net/hp-hero-packaging-hover.jpg"
-                             alt="mockups" class="lazyloaded"></div>
-                </div>
-                <!--                <div class="box-3">-->
-                <!--                    <div class="sm-pic">-->
-                <!--                        <img src="https://smartmockups-web-assets.imgix.net/hp-hero-mug-hover.jpg"-->
-                <!--                             alt="mockups" class="lazyloaded"></div>-->
-                <!--                    <div class="md-pic">-->
-                <!--                        <img src="https://smartmockups-web-assets.imgix.net/hp-hero-magazine-hover.jpg"-->
-                <!--                             alt="mockups" class="lazyloaded"></div>-->
-                <!--                </div>-->
             </div>
         </div>
     </div>
 </section>
 <!--//SLIDER-->
+<!--PRODUCTS-->
+<section class="products" id="products">
+    <div class="container">
+        <div class="products__content">
+            <h3>Продукция</h3>
+            <div id="tabs" class="products__tabs">
+                <ul class="products__tabs--nav">
+                    <li>
+                        <a href="#tab-1">Тепловизоры</a>
+                    </li>
+                    <li>
+                        <a href="#tab-2">Тепловизионные прицелы</a>
+                    </li>
+                    <li>
+                        <a href="#tab-3">Тепловизионные бинокли</a>
+                    </li>
+                    <li>
+                        <a href="#tab-4">Прицелы ночного видения</a>
+                    </li>
+                    <li>
+                        <a href="#tab-5">Тепловизионные насадки</a>
+                    </li>
+                    <li>
+                        <a href="#tab-6">Источники питания</a>
+                    </li>
+                    <li>
+                        <a href="#tab-7">Кронштейны Pulsar</a>
+                    </li>
+                    <li>
+                        <a href="#tab-8">Инфракрасные фонари</a>
+                    </li>
+                    <li>
+                        <a href="#tab-9">Аксессуары</a>
+                    </li>
+                </ul>
+                <div class="products__tabs--content">
+                    <div id="tab-1" class="tab-box">
+                        <p>Pulsar Axion, Pulsar Helion, Pulsar Quantum, INFIRAY</p>
+                        <img src="dist/img/products/1.jpg" alt="1">
+                    </div>
+                    <div id="tab-2" class="tab-box">
+                        <p>Pulsar TRAIL LRF, Pulsar THERMION, INFIRAY (IRAY)</p>
+                        <img src="dist/img/products/2.jpg" alt="2">
+                    </div>
+                    <div id="tab-3" class="tab-box">
+                        <img src="dist/img/products/3.jpg" alt="3">
+                    </div>
+                    <div id="tab-4" class="tab-box">
+                        <img src="dist/img/products/4.jpg" alt="4">
+                    </div>
+                    <div id="tab-5" class="tab-box">
+                        <img src="dist/img/products/5.jpg" alt="5">
+                    </div>
+                    <div id="tab-6" class="tab-box">
+                        <img src="dist/img/products/6.jpg" alt="6">
+                    </div>
+                    <div id="tab-7" class="tab-box">
+                        <img src="dist/img/products/7.jpg" alt="1">
+                    </div>
+                    <div id="tab-8" class="tab-box">
+                        <img src="dist/img/products/8.jpg" alt="2">
+                    </div>
+                    <div id="tab-9" class="tab-box">
+                        <img src="dist/img/products/9.jpg" alt="3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//PRODUCTS-->
+<!--advantages-->
+<section class="advantages">
+    <div class="container">
+        <h3>наши преимущества</h3>
+        <div class="advantages__items">
+            <div class="advantages__item">
+                <div class="advantages__item--img">
+                    <img src="dist/img/advantages/1.png" alt="picture">
+                </div>
+                <div class="advantages__item--title">
+                    <h4>Официальный дилер</h4>
+                </div>
+                <div class="advantages__item--subtitle">
+                    <p>Новая и оригинальная продукция Pulsar</p>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item--img">
+                    <img src="dist/img/advantages/2.png" alt="picture">
+                </div>
+                <div class="advantages__item--title">
+                    <h4>Работаем по всей Украине</h4>
+                </div>
+                <div class="advantages__item--subtitle">
+                    <p>Отправляем в любую точку Украины с оплатой при получении</p>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item--img">
+                    <img src="dist/img/advantages/3.png" alt="picture">
+                </div>
+                <div class="advantages__item--title">
+                    <h4>Скидки</h4>
+                </div>
+                <div class="advantages__item--subtitle">
+                    <p>Скидки постоянным клиентам</p>
+                </div>
+            </div>
+        </div>
+        <div class="advantages__items">
+            <div class="advantages__item">
+                <div class="advantages__item--img">
+                    <img src="dist/img/advantages/4.png" alt="picture">
+                </div>
+                <div class="advantages__item--title">
+                    <h4>Официальная гарантия</h4>
+                </div>
+                <div class="advantages__item--subtitle">
+                    <p>Гарантия на все приборы 3 года</p>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item--img">
+                    <img src="dist/img/advantages/5.png" alt="picture">
+                </div>
+                <div class="advantages__item--title">
+                    <h4>Оплата</h4>
+                </div>
+                <div class="advantages__item--subtitle">
+                    <p>У нас возможный наличный и безналичный расчет</p>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item--img">
+                    <img src="dist/img/advantages/6.png" alt="picture">
+                </div>
+                <div class="advantages__item--title">
+                    <h4>удобное расположение</h4>
+                </div>
+                <div class="advantages__item--subtitle">
+                    <p>г. Киев, ул. Крамского, 10/23</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//advantages-->
 <!--ABOUT-->
 <section class="about" id="about">
     <div class="container">
@@ -160,160 +317,6 @@
     </div>
 </section>
 <!--//ABOUT-->
-<!--PRODUCTS-->
-<section class="products" id="products">
-    <div class="container">
-        <div class="products__content">
-            <h3>Продукция</h3>
-            <div id="tabs" class="products__tabs">
-                <ul class="products__tabs--nav">
-                    <li>
-                        <a href="#tab-1">Тепловизоры</a>
-                    </li>
-                    <li>
-                        <a href="#tab-2">Тепловизионные прицелы</a>
-                    </li>
-                    <li>
-                        <a href="#tab-3">Тепловизионные бинокли</a>
-                    </li>
-                    <li>
-                        <a href="#tab-4">Прицелы ночного видения</a>
-                    </li>
-                    <li>
-                        <a href="#tab-5">Тепловизионные насадки</a>
-                    </li>
-                    <li>
-                        <a href="#tab-6">Источники питания</a>
-                    </li>
-                    <li>
-                        <a href="#tab-7">Кронштейны Pulsar</a>
-                    </li>
-                    <li>
-                        <a href="#tab-8">Источники питания</a>
-                    </li>
-                    <li>
-                        <a href="#tab-9">Инфракрасные фонари</a>
-                    </li>
-                    <li>
-                        <a href="#tab-10">Аксессуары</a>
-                    </li>
-                </ul>
-                <div class="products__tabs--content">
-                    <div id="tab-1" class="tab-box">
-                        <p>Pulsar Axion, Pulsar Helion, Pulsar Quantum, INFIRAY</p>
-                        <img src="dist/img/products/1.jpg" alt="1">
-                    </div>
-                    <div id="tab-2" class="tab-box">
-                        <p>Pulsar TRAIL LRF, Pulsar THERMION, INFIRAY (IRAY)</p>
-                        <img src="dist/img/products/2.jpg" alt="2">
-                    </div>
-                    <div id="tab-3" class="tab-box">
-                        <img src="dist/img/products/3.jpg" alt="3">
-                    </div>
-                    <div id="tab-4" class="tab-box">
-                        <img src="dist/img/products/4.jpg" alt="4">
-                    </div>
-                    <div id="tab-5" class="tab-box">
-                        <img src="dist/img/products/5.jpg" alt="5">
-                    </div>
-                    <div id="tab-6" class="tab-box">
-                        <img src="dist/img/products/6.jpg" alt="6">
-                    </div>
-                    <div id="tab-7" class="tab-box">
-                        <img src="dist/img/products/1.jpg" alt="1">
-                    </div>
-                    <div id="tab-8" class="tab-box">
-                        <img src="dist/img/products/2.jpg" alt="2">
-                    </div>
-                    <div id="tab-9" class="tab-box">
-                        <img src="dist/img/products/3.jpg" alt="3">
-                    </div>
-                    <div id="tab-10" class="tab-box">
-                        <img src="dist/img/products/4.jpg" alt="4">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--//PRODUCTS-->
-<!--advantages-->
-<section class="advantages">
-    <div class="container">
-        <h3>наши преимущества</h3>
-        <div class="advantages__items">
-            <div class="advantages__item">
-                <div class="advantages__item--img">
-                    <img src="dist/img/advantages/gas.png" alt="picture">
-                </div>
-                <div class="advantages__item--title">
-                    <h4>качество</h4>
-                </div>
-                <div class="advantages__item--subtitle">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                </div>
-            </div>
-            <div class="advantages__item">
-                <div class="advantages__item--img">
-                    <img src="dist/img/advantages/pay.png" alt="picture">
-                </div>
-                <div class="advantages__item--title">
-                    <h4>доступные цены</h4>
-                </div>
-                <div class="advantages__item--subtitle">
-                    <p>Доступные цены и гибкая ценовая политика компании</p>
-                </div>
-            </div>
-            <div class="advantages__item">
-                <div class="advantages__item--img">
-                    <img src="dist/img/advantages/sale.png" alt="picture">
-                </div>
-                <div class="advantages__item--title">
-                    <h4>Скидки</h4>
-                </div>
-                <div class="advantages__item--subtitle">
-                    <p>Возможны скидки до 20%</p>
-                </div>
-            </div>
-        </div>
-        <div class="advantages__items">
-            <div class="advantages__item">
-                <div class="advantages__item--img">
-                    <img src="dist/img/advantages/coronavirus.png" alt="picture">
-                </div>
-                <div class="advantages__item--title">
-                    <h4>Индивудуальний подход</h4>
-                </div>
-                <div class="advantages__item--subtitle">
-                    <p>Индивидуальный подход к каждому клиенту</p>
-                </div>
-            </div>
-            <div class="advantages__item">
-                <div class="advantages__item--img">
-                    <img src="dist/img/advantages/person.png" alt="picture">
-                </div>
-                <div class="advantages__item--title">
-                    <h4>опытный Персонал</h4>
-                </div>
-                <div class="advantages__item--subtitle">
-                    <p>Опытный и квалифицированный персонал, высокий уровень обслуживания</p>
-                </div>
-            </div>
-            <div class="advantages__item">
-                <div class="advantages__item--img">
-                    <img src="dist/img/advantages/location.png" alt="picture">
-                </div>
-                <div class="advantages__item--title">
-                    <h4>удобное расположение</h4>
-                </div>
-                <div class="advantages__item--subtitle">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, totam.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--//advantages-->
 <!--CONSULT-->
 <section class="consult">
     <div class="container">
@@ -322,9 +325,11 @@
                 <h3>Получить консультацию:</h3>
             </div>
             <div class="consult__form">
-                <form action="">
-                    <input type="tel" placeholder="Номер телефона">
-                    <button type="button" class="btn">отправить</button>
+                <form action="#">
+                    <input type="hidden" name="whatform" value="Форма - Получить консультацию"/>
+                    <input type="tel" id="consult-tel" size="30" maxlength="100" name="phone" placeholder="Телефон *">
+                    <div class="msg"></div>
+                    <button type="button" class="btn submit-btn">отправить</button>
                 </form>
             </div>
         </div>
@@ -345,7 +350,7 @@
                     <a class="" href="tel:+380670995001">+38 (097) 099 5001</a>
                 </div>
                 <p class="contacts__tel">Прием звонков: с 8:00 до 20:00 без выходных.</p>
-                <button class="btn">Задать вопрос</button>
+                <button class="btn question">Задать вопрос</button>
             </div>
             <div class="contacts__map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1270.1712013781957!2d30.371229651451774!3d50.45334833196105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc8f145d804f%3A0xa25a96fddd35acd2!2z0YPQuy4g0JjQstCw0L3QsCDQmtGA0LDQvNGB0LrQvtCz0L4sIDEwLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1603048596459!5m2!1sru!2sua"
@@ -353,7 +358,6 @@
                         aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
-    </div>
     </div>
 </section>
 <!--//MAP-->
@@ -369,8 +373,8 @@
             <div class="footer__item footer__item--nav">
                 <p>Меню:</p>
                 <a href="#header">Главная</a>
-                <a href="#about">О нас</a>
                 <a href="#products">Продукция</a>
+                <a href="#about">О нас</a>
                 <a href="#contacts">Контакти</a>
             </div>
             <div class="footer__item footer__item--contacts">
@@ -380,7 +384,7 @@
                 <p class="contacts__tel">Прием звонков: с 8:00 до 20:00 без выходных.</p>
             </div>
         </div>
-        <p class="footer__content--copyright">&copy;
+        <p class="footer__copyright">&copy;
             <script>document.write(new Date().getFullYear());</script>
         </p>
     </div>
