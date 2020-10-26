@@ -327,9 +327,13 @@
             <div class="consult__form">
                 <form action="#">
                     <input type="hidden" name="whatform" value="Форма - Получить консультацию"/>
-                    <input type="tel" id="consult-tel" size="30" maxlength="100" name="phone" placeholder="Телефон *">
-                    <div class="msg"></div>
-                    <button type="button" class="btn submit-btn">отправить</button>
+                    <input class="form-input" type="hidden" size="30" maxlength="100" name="name"
+                           placeholder="Имя *" value="noname">
+                    <div>
+                        <input type="tel" id="consult-tel" size="30" maxlength="100" name="phone" placeholder="Телефон *">
+                        <div class="msg"></div>
+                    </div>
+                    <button type="submit" class="btn submit-btn">отправить</button>
                 </form>
             </div>
         </div>

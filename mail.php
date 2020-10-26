@@ -21,7 +21,7 @@ if ( ! empty($errors)) {
       if ( $method === 'POST' ) {
 
       	$project_name = "grandpulsar.com.ua";
-      	$admin_email  = "pulsar@grandpulsar.com.ua";
+      	$admin_email  = "admin@grandpulsar.com.ua";
       	$form_subject = "Заполнена форма на сайте";
 
       	foreach ( $_POST as $key => $value ) {
